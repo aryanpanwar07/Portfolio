@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styles */
+    body {
+        
+        background-color: #ffffff; /* Dark background for the body */
+        color: #000000;
+        font-family: Arial, sans-serif;
+        padding-top: 56px; /* Padding to avoid content going under the navigation bar */
+    }
+    .header {
+        background-size: cover;
+        background-color: #000;
+        color: #ffffff;
+        text-align: center;
+        padding: 100px 0;
+    }
+    .card {
+        border: 10px solid #000;
+        border-radius: 10px;
+        background-color: #1e1e1e;
+        color: #fff;
+        overflow: hidden;
+        transition: transform 0.3s;
+        margin-bottom: 20px;
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+    hr{
+        border-top: 1px solid #ffffff;
+    }
+    .education-card {
+        border-radius: 25px;
+        border: 10px solid #000;
+        background-color: #000;
+        color: #fff;
+        padding: 15px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+   
+
+    .education-card:hover {
+        transform: scale(1.05);
+    }
+    .footer {
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    /* Add border around skills and education sections */
+    #skills, #education, #portfolio {
+        border: 4px solid #fff;
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    #contact {
+        background-color: #000000;
+        color: #fff;
+    }
+    .skills-card {
+    border-radius: 25px;
+    border: 10px solid #000;
+    background-color: #000;
+    color: #fff;
+    padding: 40px; /* Increase padding */
+    margin-bottom: 40px; /* Increase margin */
+    transition: transform 5s ease;
+    display: flex;
+    margin-left: -53%;;
+    width: max-content;
+    flex-wrap: wrap; /* Allows the items to wrap if they exceed the width */
+    justify-content: center; /* Align items horizontally in the center */
+    align-items: center;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Align items horizontally in the center */
+    align-items: center;
+    margin: 0; /* Remove margin */
+}
+
+.skills-list li {
+    margin: 0 20px; /* Adjust margin */
+}
+
+    .skills-card:hover {
+        transform: scale(1.05);
+    }
+    
+    .skills-list li img {
+        width: 70px;
+        height: 70px;
+        transition: transform 0.3s ease;
+    }
+    .skills-list li img:hover {
+        transform: scale(1.2);
+    }
+    #contact {
+    background-color: #000000; /* Change background color to dark gray */
+    color: #fff; /* Change text color to white */
+}
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-color: #000000;">
+    <div class="container">
+      <a class="navbar-brand" href="#"><b>Aryan Panwar</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <img src="./Images/aryan.webp" alt="Passport Photo" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 165px;">
+      <h1><b>Aryan Panwar</b></h1>
+      <hr>
+      <div>
+        <p style="border: 3px solid #000; border-radius: 10px; padding: 10px;">A computer science student with a strong passion for technology, particularly in the areas of programming and artificial intelligence. Skilled in various programming languages like C++, C, and Java. Actively explored the world of Machine Learning. I used data analysis techniques to build a model that predicts heart disease. I also build a model detects the drowsiness of a person by their facial features or expressions which was done using softmax functions.</p>
+    </div>
+    <hr>
+  </div>
+</header>
+
+<!-- Education -->
+<section id="education" class="container">
+  <h2 class="text-center mb-4"><b>Education</b></h2>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card education-card"> 
+        <div class="card-body">
+          <h5 class="card-title"><b>Bachelor of Science in Computer Science</b></h5>
+          <p class="card-text">Graphic Era Hill University Dehradun, 2021 - present</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card education-card"> 
+        <div class="card-body">
+          <h5 class="card-title"><b>Secondary School Certificate</b></h5>
+          <p class="card-text">Kendriya Vidyalaya Delhi, 2020 - 2021</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card education-card">
+        <div class="card-body">
+          <h5 class="card-title"><b>Higher Secondary School Certificate</b></h5>
+          <p class="card-text">St. Mary's Senior Secondary School, 2018 - 2019</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="container">
+  <h2 class="text-center mb-4"><b>Skills</b></h2>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="skills-card"> 
+        <ul class="skills-list">
+          <li><img src="./Images/c.png" alt="c"></li>
+          <li><img src="./Images/c++.png" alt="c++"></li>
+          <li><img src="./Images/java.png" alt="java"></li>
+          <li><img src="./Images/py.png" alt="python"></li>
+          <li><img src="./Images/html.png" alt="html"></li>
+          <li><img src="./Images/css.png" alt="css"></li>
+          <li><img src="./Images/js.png" alt="js"></li>
+          <li><img src="./Images/sql.png" alt="sql"></li>
+          <li><img src="./Images/b.png" alt="b"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="container" style="padding-top: 20px;">
+  <h2 class="text-center mb-4"><b>Projects</b></h2>
+  <div class="row">
+    <div class="col-md-4 portfolio-item">
+      <div class="card">
+        <img src="https://thumbs.dreamstime.com/b/driving-car-highway-close-up-hands-steering-wheel-71974896.jpg" class="card-img-top" alt="Project 1">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;"><b><u>Drowsiness Detection by Facial Expression & Features</u></b></h5>
+          <p class="card-text" style="text-align: center;">Implemented by using <b>Activation functions</b> like softmax and sigmoid function.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 portfolio-item">
+      <div class="card">
+        <img src="https://newsinhealth.nih.gov/sites/nihNIH/files/styles/featured_media_breakpoint-large/public/2021/August/aug-2021-capsule2-drawing-heart.jpg?itok=A3dTXb5H" class="card-img-top" alt="Project 2">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;"><b><u>Heart Disease Prediction</u></b></h5>
+          <p class="card-text" style="text-align: center;">Predicted by different Machine Learning techniques like <B>Decision Tree</B>, <b>Random Forest</b>, <b>K-Nearest Neighbour</b>, <B>Linear Regression</B> and <b>Logistic Regression.</b> </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 portfolio-item">
+      <div class="card">
+        <img src="https://blogassets.leverageedu.com/blog/wp-content/uploads/2019/10/23165643/Bank-Manager.jpg" class="card-img-top" alt="Project 3">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align-last: center;"><b> <u>Bank Management System</u></b></h5>
+          <p class="card-text" style="text-align: center;">A bank management system automates banking operations like account management and transactions, ensuring efficient service delivery and regulatory compliance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-dark py-5 text-white">
+  <div class="container">
+    <h2 class="text-center mb-4"><b>Contact Me</b></h2>
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2024 My Portfolio</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+</body>
